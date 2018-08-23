@@ -1,0 +1,9 @@
+<h2>Categories which have symbol 'a' in name!</h2>
+
+<?php
+$collection = $block->getCategoryCollection(); ?>
+<ul>
+<?php foreach ($collection as $category) {?>
+    <li> <?= $category->getName(); ?></li>
+<?php } ?>
+</ul>

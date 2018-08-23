@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MyCompany_ExampleAdminNewPage::test" title="test" translate="title" module="MyCompany_ExampleAdminNewPage" parent="Magento_Backend::system" sortOrder="50" dependsOnModule="MyCompany_ExampleAdminNewPage" resource="MyCompany_ExampleAdminNewPage::test"/>
+        <add id="MyCompany_ExampleAdminNewPage::test_categories" title="test" translate="title" module="MyCompany_ExampleAdminNewPage" parent="MyCompany_ExampleAdminNewPage::test" sortOrder="10" dependsOnModule="MyCompany_ExampleAdminNewPage" action="exampleadminnewpage/categories" resource="MyCompany_ExampleAdminNewPage::test"/>
+    </menu>
+</config>

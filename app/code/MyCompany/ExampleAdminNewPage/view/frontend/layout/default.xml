@@ -2,9 +2,9 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceContainer name="page.main.title">
-            <block class="MyCompany\ExampleAdminNewPage\Block\Html\ReviewsCount" name="page.main.reviewCount"
-                   output="toHtml" template="MyCompany_ExampleAdminNewPage::html/title.phtml"/>
-        </referenceContainer>
+        <referenceBlock name="page.main.title">
+            <block class="MyCompany\ExampleAdminNewPage\Block\Html\ReviewsCount" name="reviewCount"
+                    template="MyCompany_ExampleAdminNewPage::html/title.phtml" />
+        </referenceBlock>
     </body>
 </page>

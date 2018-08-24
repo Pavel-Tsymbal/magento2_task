@@ -18,15 +18,8 @@ use Magento\Framework\View\Element\Template;
  * @api
  * @since 100.0.2
  */
-class Title extends Template
+class ReviewsCount extends Template
 {
-    /**
-     * Own page title to display on the page
-     *
-     * @var string
-     */
-    protected $pageTitle;
-
     /**
      * \Magento\Framework\Registry $registry
      */
@@ -51,43 +44,6 @@ class Title extends Template
         parent::__construct($context, $data);
         $this->_reviewFactory = $reviewFactory;
         $this->registry = $registry;
-    }
-
-    /**
-     * Provide own page title or pick it from Head Block
-     *
-     * @return string
-     */
-    public function getPageTitle()
-    {
-        if (!empty($this->pageTitle)) {
-            return $this->pageTitle;
-        }
-        return __($this->pageConfig->getTitle()->getShort());
-    }
-
-    /**
-     * Provide own page content heading
-     *
-     * @return string
-     */
-    public function getPageHeading()
-    {
-        if (!empty($this->pageTitle)) {
-            return __($this->pageTitle);
-        }
-        return __($this->pageConfig->getTitle()->getShortHeading());
-    }
-
-    /**
-     * Set own page title
-     *
-     * @param string $pageTitle
-     * @return void
-     */
-    public function setPageTitle($pageTitle)
-    {
-        $this->pageTitle = $pageTitle;
     }
 
     /**
